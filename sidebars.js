@@ -1,26 +1,62 @@
-module.exports = {
+const sidebars = {
   tutorialSidebar: [
     'intro',
-    'installation',
-    'quick-start',
-    'system-overview',
+
     {
       type: 'category',
-      label: 'Features',
+      label: 'Installation',
+      collapsed: true,
       items: [
-        'features/data-loading',
-        'features/calibration-analysis',
-        'features/range-system',
-        'features/distance-optimization',
-        'features/visualization',
-        'features/configuration',
+        'installation/client-installation-guide',
+        'installation/server',
       ],
     },
+
     {
       type: 'category',
-      label: 'Workflow',
-      items: ['workflow/full-workflow'],
+      label: 'System Overview',
+      collapsed: false,
+      items: [
+        'system-overview/main-window',
+
+        {
+          type: 'category',
+          label: 'Main Cali Result',
+          collapsed: false,
+          items: [
+            'system-overview/main-cali-result/index',
+            'system-overview/main-cali-result/main-window-overview',
+            'system-overview/main-cali-result/result-table-view',
+            'system-overview/main-cali-result/parameter-view',
+            'system-overview/main-cali-result/overlap-and-aggregation-view',
+          ],
+        },
+
+        'system-overview/3d-verification',
+        'system-overview/monitor-viewer',
+        'system-overview/pct-pattern-generator',
+      ],
     },
-    'troubleshooting',
+
+    {
+      type: 'category',
+      label: 'Calibration Workflow',
+      collapsed: true,
+      items: [
+        'calibration/camera-calibration',
+        'calibration/reload-calibration-data',
+      ],
+    },
+
+    {
+      type: 'category',
+      label: 'Database',
+      collapsed: true,
+      items: [
+        'database/database-overview',
+      ],
+    },
   ],
 };
+
+export default sidebars;

@@ -20,7 +20,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
+            Get Started with Calibration Docs
           </Link>
         </div>
       </div>
@@ -33,7 +33,8 @@ export default function Home() {
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      description="Documentation for the Moil Fisheye Calibration System - analyze calibration data, optimize distance, and visualize results."
+    >
       <HomepageHeader />
       <main>
         <HomepageFeatures />

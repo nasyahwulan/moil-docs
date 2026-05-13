@@ -4,32 +4,35 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Fisheye Camera Calibration',
+    Svg: require('@site/static/img/feature_fisheye.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Calibrate fisheye cameras (FOV &gt; 180°) using a concentric pattern target,
+        recovering principal point, focal length, viewpoint, and projection function
+        based on <strong>US Patent 7,042,508 B2</strong>.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Multi-Round Analysis',
+    Svg: require('@site/static/img/feature_rounds.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Capture up to <strong>10 calibration rounds</strong>, process each with the
+        IH-Alpha and ZFL-IH pipeline, and find the best distance via minimum
+        aggregation search across all enabled rounds.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Server & Client Architecture',
+    Svg: require('@site/static/img/feature_server.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        HTTP-based services for Axis (port 8000), Monitor (port 8001), and Camera
+        (port 8002) — Windows 11 server controls hardware, Ubuntu 22.04 client
+        operates the GUI through FastAPI.
       </>
     ),
   },

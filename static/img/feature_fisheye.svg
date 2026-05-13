@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 160" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Concentric circles representing fisheye PCT pattern -->
+  <g transform="translate(100,80)" stroke="#2E8B57">
+    <circle r="65" stroke-width="2" />
+    <circle r="55" stroke-width="2" />
+    <circle r="45" stroke-width="2" />
+    <circle r="35" stroke-width="2" />
+    <circle r="25" stroke-width="2" />
+    <circle r="15" stroke-width="2" />
+    <circle r="6" fill="#2E8B57" stroke="none" />
+  </g>
+  <!-- Crosshair indicating principal point -->
+  <g transform="translate(100,80)" stroke="#1F5F3F" stroke-width="1.5" opacity="0.6">
+    <line x1="-78" y1="0" x2="-70" y2="0" />
+    <line x1="70" y1="0" x2="78" y2="0" />
+    <line x1="0" y1="-78" x2="0" y2="-70" />
+    <line x1="0" y1="70" x2="0" y2="78" />
+  </g>
+  <!-- Camera viewpoint indicator -->
+  <g transform="translate(100,80)" fill="#2E8B57" opacity="0.4">
+    <circle r="3" />
+  </g>
+  <!-- Outer fisheye bounds -->
+  <circle cx="100" cy="80" r="72" stroke="#1F5F3F" stroke-width="1" stroke-dasharray="3,3" opacity="0.5" />
+</svg>

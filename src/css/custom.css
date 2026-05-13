@@ -28,3 +28,124 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* ================================
+   Custom Documentation Note Boxes
+================================ */
+
+.custom-note {
+  border-left: 6px solid #25c2a0;
+  background: #ecfdf5;
+  padding: 16px 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  color: #064e3b;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.custom-note-title {
+  font-weight: 700;
+  font-size: 16px;
+  color: #047857;
+  margin-bottom: 8px;
+}
+
+.custom-note p {
+  margin: 0 0 8px 0;
+}
+
+.custom-note ul {
+  margin: 8px 0 0 0;
+  padding-left: 22px;
+}
+
+.custom-note li {
+  margin-bottom: 4px;
+}
+
+/* Warning style */
+.custom-warning {
+  border-left-color: #f59e0b;
+  background: #fffbeb;
+  color: #78350f;
+}
+
+.custom-warning .custom-note-title {
+  color: #b45309;
+}
+
+/* Danger style */
+.custom-danger {
+  border-left-color: #ef4444;
+  background: #fef2f2;
+  color: #7f1d1d;
+}
+
+.custom-danger .custom-note-title {
+  color: #dc2626;
+}
+
+/* Dark mode */
+[data-theme='dark'] .custom-note {
+  background: #10231d;
+  color: #d1fae5;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+}
+
+[data-theme='dark'] .custom-note-title {
+  color: #5eead4;
+}
+
+[data-theme='dark'] .custom-warning {
+  background: #2a1f0a;
+  color: #fde68a;
+}
+
+[data-theme='dark'] .custom-warning .custom-note-title {
+  color: #fbbf24;
+}
+
+[data-theme='dark'] .custom-danger {
+  background: #2a1111;
+  color: #fecaca;
+}
+
+[data-theme='dark'] .custom-danger .custom-note-title {
+  color: #f87171;
+}
+
+/* Center alignment */
+.center {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+/* Uniform image sizing inside figure containers */
+.center img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Figure caption styling */
+.center p {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  font-size: 0.9rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+/* Dark mode caption */
+[data-theme='dark'] .center p {
+  color: var(--ifm-color-emphasis-500);
+}
+
+/* Fallback for any inline image outside .center wrapper */
+.markdown img:not(.center img) {
+  max-width: 100%;
+  height: auto;
+}
